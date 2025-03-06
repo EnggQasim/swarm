@@ -251,6 +251,8 @@ Sales Agent
 It can also update the `context_variables` by returning a more complete `Result` object. This can also contain a `value` and an `agent`, in case you want a single function to return a value, update the agent, and update the context variables (or any subset of the three).
 
 ```python
+from swarm.types import Result
+
 sales_agent = Agent(name="Sales Agent")
 
 def talk_to_sales():
